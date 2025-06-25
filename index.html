@@ -19,11 +19,12 @@
             let now=new Date()
             let dat=now.getDate()
             let mon=now.getMonth()
+            let mon1=mon+1
             let yer=new Date().getFullYear()
             let day=now.getDay()
             dat=dat<10?"0"+dat:dat;
-            mon=mon<10?"0"+mon:mon;
-            document.getElementById("res").innerHTML=dat+"."+mon+"."+yer+"."+day
+            mon1=mon1<10?"0"+mon1:mon1;
+            document.getElementById("res").innerHTML=dat+"."+mon1+"."+yer+"."+day
         }
         setInterval(cal,1000)
     </script>
