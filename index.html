@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1
+        {
+            text-align: center;font-size: 70px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="res"></h1>
+    <script>
+        function cal()
+        {
+            let now=new Date()
+            let dat=now.getDate()
+            let mon=now.getMonth()
+            let yer=new Date().getFullYear()
+            let day=now.getDay()
+            dat=dat<10?"0"+dat:dat;
+            mon=mon<10?"0"+mon:mon;
+            document.getElementById("res").innerHTML=dat+"."+mon+"."+yer+"."+day
+        }
+        setInterval(cal,1000)
+    </script>
+</body>
+</html>
